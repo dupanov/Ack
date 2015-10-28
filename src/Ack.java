@@ -1,27 +1,25 @@
 import java.util.Scanner;
 
 /**
- * Created by Вадик on 29.10.2015.
+ * Created by Р’Р°РґРёРє on 29.10.2015.
  */
 public class Ack {
     public static void main(String args[]) {
 
-        //Запрос значений для функции Акермана
+        //Р—Р°РїСЂРѕСЃ Р·РЅР°С‡РµРЅРёР№ РґР»СЏ С„СѓРЅРєС†РёРё РђРєРµСЂРјР°РЅР°
         Scanner sc = new Scanner(System.in);
         if(sc.hasNext()){
         int n = sc.nextInt();
         int m = sc.nextInt();
-        System.out.println(Ack(m, n));
+        System.out.println("Р¤СѓРЅРєС†РёСЏ РђРєРµСЂРјР°РЅР°: " + Ack(m, n));
         }
 
-        //Запрос и вывод степенной функции
-        if(sc.hasNext()){
-            System.out.println(pow(sc.nextInt(),sc.nextInt()));
-        }
+        //Р—Р°РїСЂРѕСЃ Рё РІС‹РІРѕРґ СЃС‚РµРїРµРЅРЅРѕР№ С„СѓРЅРєС†РёРё
+        if(sc.hasNext()) System.out.println("РЎС‚РµРїРµРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ: " + pow(sc.nextInt(), sc.nextInt()));
 
     }
 
-    //Реализация функции Акермана. Осторожно - вылетает уже при малых значениях м и н!!!
+    //Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё РђРєРµСЂРјР°РЅР°. РћСЃС‚РѕСЂРѕР¶РЅРѕ - РІС‹Р»РµС‚Р°РµС‚ СѓР¶Рµ РїСЂРё РјР°Р»С‹С… Р·РЅР°С‡РµРЅРёСЏС… Рј Рё РЅ!!!
     public static int Ack(int m, int n){
         if(m == 0){
             return (n+1);
@@ -33,7 +31,7 @@ public class Ack {
         return 0;
     }
 
-    //Реализация степенной функции
+    //Р РµР°Р»РёР·Р°С†РёСЏ СЃС‚РµРїРµРЅРЅРѕР№ С„СѓРЅРєС†РёРё
     public static int pow(int x, int n){
         if(n==1){
             return x;
